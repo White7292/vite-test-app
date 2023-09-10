@@ -6,7 +6,7 @@
   import NorthEastArrow from './lib/assets/arrow_north_east.svelte';
 
   import WestArrow from './lib/assets/arrow_west.svelte';
-  import Center from './lib/assets/center_filter_tilt_shift.svelte';
+  import Center from './lib/assets/cycle.svelte';
   import EastArrow from './lib/assets/arrow_east.svelte';
 
   import SouthWestArrow from './lib/assets/arrow_south_west.svelte';
@@ -201,12 +201,6 @@
     margin: auto;
     width: 50%;
   }
-
-	.step-cell {
-		height: 100%;
-		width: 100%;
-		text-align: center;
-	}
 
 	.active-step {
 		background-color: red;
