@@ -1,8 +1,4 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
-
   import { printTime } from './lib/time-helpers';
 
   import NorthWestArrow from './lib/assets/arrow_north_west.svelte';
@@ -137,7 +133,7 @@
 
 <main>
   <div class="drill-display-container">
-    <table>
+    <table class="center">
       {#each stepMatrix as row, i}
         <tr>
           {#each row as step, j}
@@ -201,6 +197,11 @@
 </main>
 
 <style>
+  .center {
+    margin: auto;
+    width: 50%;
+  }
+
 	.step-cell {
 		height: 100%;
 		width: 100%;
